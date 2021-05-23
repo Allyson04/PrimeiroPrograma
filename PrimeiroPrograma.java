@@ -1,5 +1,7 @@
 package com.mycompany.PrimeiroPrograma;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.util.Date;
 
 public class PrimeiroPrograma {
@@ -15,6 +17,9 @@ public class PrimeiroPrograma {
         String country = System.getProperty("user.country");
         System.out.println("Your system location is: " + country);
         
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        String screenResolution = screenSize.getWidth() + " x " + screenSize.getHeight();
+        System.out.println(screenResolution);
         
     }
 }
